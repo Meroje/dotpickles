@@ -1,5 +1,5 @@
 [user]
-	name = Jerome Foray
+	name = "Jerome Foray"
 	email = meroje.f@gmail.com
 [alias]
 	st = status
@@ -10,3 +10,5 @@
     editor = $EDITOR
 [push]
 	default = simple
+[credential]
+	helper = osxkeychain
