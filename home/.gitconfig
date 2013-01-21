@@ -1,0 +1,12 @@
+[user]
+	name = Jerome Foray
+	email = meroje.f@gmail.com
+[alias]
+	st = status
+[color]
+	ui = always
+[core]
+	excludesfile = ~/.gitignore_global
+    editor = $EDITOR
+[push]
+	default = simple
