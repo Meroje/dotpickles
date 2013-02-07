@@ -12,8 +12,10 @@
 	default = tracking
 [merge]
 	stat = true
+	tool = Kaleidoscope
 [mergetool]
 	keepBackup = false
+	prompt = false
 [help]
 	autocorrect = 1
 [credential]
@@ -33,12 +35,12 @@
 	untracked = red
 
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
 [diff]
 	mnemonicprefix = true
-	tool          = Kaleidoscope
+	tool = Kaleidoscope
 
 [url "git@github.com:"]
 	insteadOf     = "ghs:"
@@ -123,4 +125,7 @@
 	path =
 [mergetool "sourcetree"]
 	cmd = /usr/local/Cellar/sourcetree/1.5.4/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
