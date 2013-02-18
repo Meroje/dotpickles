@@ -3,4 +3,4 @@
 	url = git@github.com:Meroje/prezto.git
 [submodule "home/.tmux-powerline"]
 	path = home/.tmux-powerline
-	url = git://github.com/erikw/tmux-powerline.git
+	url = git@github.com:Meroje/tmux-powerline.git
