@@ -43,3 +43,6 @@ Thumbs.db
 *.sublime-workspace
 .idea
 nbproject
+
+# Vagrant
+.vagrant
