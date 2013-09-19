@@ -132,3 +132,5 @@
 	trustExitCode = true
 [remote "origin"]
 	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+[rerere]
+	enabled = true
