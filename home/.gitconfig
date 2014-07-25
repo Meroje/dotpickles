@@ -121,6 +121,7 @@
 	t       = !tig
 	# https://github.com/defunkt/gist
 	gist    = !gist
+	rdiff = "!g() { origin=`git config --get remote.origin.url`; url=${origin/.git/\\/commit\\/`git rev-parse HEAD`}; open $url; }; g"
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
 	path = 

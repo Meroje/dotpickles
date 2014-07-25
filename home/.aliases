@@ -12,3 +12,4 @@ alias ri='ri -f ansi'
 alias sping='ping -c 10 google.com | tee >(grep "bytes from" | cut -d " " -f 7 | cut -d "=" -f 2 | spark)'
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder'
 alias love="/Applications/love.app/Contents/MacOS/love"
+alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
